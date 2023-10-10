@@ -3,6 +3,10 @@ async function getWorks(){
     return response.json()
 }
 
+function filtrerProjets(){
+    
+}
+
 function genererProjets(projets){
     for (let i = 0; i < projets.length; i++) {
 
