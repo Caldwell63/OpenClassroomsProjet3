@@ -4,8 +4,6 @@ async function getWorks(){
 }
 
 function genererProjets(projets){
-    // const baliseTitre = document.createElement('h2')
-    // baliseTitre.textContent = "Mes Projets"
     for (let i = 0; i < projets.length; i++) {
 
         const works = projets[i];
