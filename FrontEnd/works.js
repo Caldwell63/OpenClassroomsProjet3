@@ -5,6 +5,7 @@ async function getWorks(){
     return response.json()
 }
 
+
 async function getCategories(){
     const category = await fetch("http://localhost:5678/api/categories");
     return category.json()
@@ -12,6 +13,7 @@ async function getCategories(){
 
 
 function generateProjects(projects){
+
 
     for (let i = 0; i < projects.length; i++) {
         //TODO : faire une boucle maps !!
@@ -58,6 +60,7 @@ function generateFilterCategories(categories, works){
 
 const works = await getWorks()
 
+
 generateProjects(works)
 const categories = await getCategories()
 
@@ -77,3 +80,4 @@ Array.from(document.getElementsByClassName('filter')).map((bouton) => {
         }
     })
 })
+
